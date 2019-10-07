@@ -5,7 +5,7 @@ In this lab you will setup the Azure Machine Learning service from code and crea
 If you have not cloned this repository to your virtual machine, do so now. All of the artifacts for this lab are located under `C:\azure-machine-learning-service-labs-master\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`.
 
 ## Exercise 1 - Get oriented to the lab files
-1. On your virtual machine expand the folder `01-model-training` which is under `C:\labfiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`
+1. On your virtual machine expand the folder `01-model-training` which is under `C:\azure-machine-learning-service-labs-master\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`
 2. Expand the `data` folder. This folder contains two CSV files. `UsedCars_Clean.csv` represents the unlabeled data and `UsedCars_Affordability.csv` contains the complete data set with labels (Affordable is 1 for affordable, 0 for not affordable).<br/>
     <img src="images/data.jpg"/><br/>
 3. Expand `training`. This folder contains train.py which will be used later in the lab to train the model using a remote cluster provided by AML Compute.<br/>
@@ -41,6 +41,9 @@ In the steps that follow, you will train multiple models using different sizes o
 1. Execute **Step 8** to quickly verify you have the Azure Machine Learning SDK installed. If you get a version number back without error, you are ready to proceed.<br/>
 2. All Azure Machine Learning entities are organized within a Workspace. You can create an AML Workspace in the Azure Portal, but as the code in **Step 9** shows, you can also create a Workspace directly from code. Set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region` as directed by the comments. Execute **Step 9**. You will be prompted to log in to your Azure Subscription.<br/>
     <img src="images/eastus.jpg"/><br/><br/><br/>
+ ``
+ Set the value for `workspace_region` as 'eastus'
+ ``
     <img src="images/vs13.jpg"/><br/>
 3. To begin capturing metrics, you must first create an Experiment and then call `start_logging()` on that Experiment. The return value of this call is a Run. This root run can have other child runs. When you are finished with an experiment run, use `complete()` to close out the root run. Execute **Step 10** to train four different models using differing amounts of training data and log the results to Azure Machine Learning.<br/>
    <img src="images/vs14.jpg"/><br/>
