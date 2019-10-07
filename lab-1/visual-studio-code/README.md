@@ -13,7 +13,7 @@ If you have not cloned this repository to your virtual machine, do so now. All o
 4. To run a lab, start Visual Studio Code and open the folder: `01-model-training` and click the starting python file: `01_model_training.py`.<br/>
     <img src="images/vs1.jpg"/><br/>
 5. Confirm that your have setup `azure_automl` as your interpreter.<br/>
-    <img src="images/vs2.jpg"/><br/>
+    <img src="images/vs2.jpg"/><br/><br/><br/>
     <img src="images/vs3.jpg"/><br/>
 6. `01_model_training.py` is the Python file you will step through executing in this lab.<br/>
 7. For each step click on `Run Cell` just above the step.
@@ -40,7 +40,7 @@ In the steps that follow, you will train multiple models using different sizes o
 
 1. Execute **Step 8** to quickly verify you have the Azure Machine Learning SDK installed. If you get a version number back without error, you are ready to proceed.<br/>
 2. All Azure Machine Learning entities are organized within a Workspace. You can create an AML Workspace in the Azure Portal, but as the code in **Step 9** shows, you can also create a Workspace directly from code. Set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region` as directed by the comments. Execute **Step 9**. You will be prompted to log in to your Azure Subscription.<br/>
-    <img src="images/eastus.jpg"/><br/>
+    <img src="images/eastus.jpg"/><br/><br/><br/>
     <img src="images/vs13.jpg"/><br/>
 3. To begin capturing metrics, you must first create an Experiment and then call `start_logging()` on that Experiment. The return value of this call is a Run. This root run can have other child runs. When you are finished with an experiment run, use `complete()` to close out the root run. Execute **Step 10** to train four different models using differing amounts of training data and log the results to Azure Machine Learning.<br/>
    <img src="images/vs14.jpg"/><br/>
