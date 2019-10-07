@@ -14,7 +14,7 @@ In this lab you will setup the Azure Machine Learning service from code and crea
 6. Once you select the python interpreter, select `azure_automl`
     <img src="images/vs3.jpg"/><br/>
 7. `01_model_training.py` is the Python file you will step through executing in this lab.<br/>
-8. Click on `Run Cell` just above the step for each steps as show below.<br/>
+8. You need to `Run Cell` just above the step for each steps as show below.<br/>
     <img src="images/vs4.jpg"/><br/>
 
 ## Exercise 2 - Train a simple model locally
