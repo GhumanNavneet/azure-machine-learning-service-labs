@@ -1,22 +1,20 @@
-# Lab 1 - Training a Machine Learning Model using Azure Machine Learning service
+#  Training a Machine Learning Model using Azure Machine Learning service
 In this lab you will setup the Azure Machine Learning service from code and create a classical machine learning model that logs metrics collected during model training.
 
-## Exercise 0 - Get the lab files
-If you have not cloned this repository to your virtual machine, do so now. All of the artifacts for this lab are located under `C:\azure-machine-learning-service-labs-master\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`.
-
 ## Exercise 1 - Get oriented to the lab files
-1. On your virtual machine expand the folder `01-model-training` which is under `C:\azure-machine-learning-service-labs-master\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`
+1. On your virtual machine expand the folder `01-model-training` which is under `C:\Labfiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`
 2. Expand the `data` folder. This folder contains two CSV files. `UsedCars_Clean.csv` represents the unlabeled data and `UsedCars_Affordability.csv` contains the complete data set with labels (Affordable is 1 for affordable, 0 for not affordable).<br/>
     <img src="images/data.jpg"/><br/>
 3. Expand `training`. This folder contains train.py which will be used later in the lab to train the model using a remote cluster provided by AML Compute.<br/>
     <img src="images/train.jpg"/><br/>
 4. To run a lab, start Visual Studio Code and open the folder: `01-model-training` and click the starting python file: `01_model_training.py`.<br/>
     <img src="images/vs1.jpg"/><br/>
-5. Confirm that your have setup `azure_automl` as your interpreter.<br/>
-    <img src="images/vs2.jpg"/><br/><br/><br/>
+5. For setting `azure_automl` as your interpreter select **Python Interpreter**. This will take 2 minutes to setup<br/>
+    <img src="images/vs2.jpg"/><br/>
+6. Once you select the python interpreter, select `azure_automl`
     <img src="images/vs3.jpg"/><br/>
 6. `01_model_training.py` is the Python file you will step through executing in this lab.<br/>
-7. For each step click on `Run Cell` just above the step.
+7. Click on `Run Cell` just above the step for each steps as show below.<br/>
     <img src="images/vs4.jpg"/><br/>
 
 ## Exercise 2 - Train a simple model locally
@@ -39,15 +37,22 @@ If you have not cloned this repository to your virtual machine, do so now. All o
 In the steps that follow, you will train multiple models using different sizes of training data and observe the impact on performance (accuracy). Each time you create new model, you are executing a Run in the terminology of Azure Machine Learning service. In this case, you will create one Experiment and execute multiple Runs within it, each with different training percentages (and resultant varying accuracies).
 
 1. Execute **Step 8** to quickly verify you have the Azure Machine Learning SDK installed. If you get a version number back without error, you are ready to proceed.<br/>
-2. All Azure Machine Learning entities are organized within a Workspace. You can create an AML Workspace in the Azure Portal, but as the code in **Step 9** shows, you can also create a Workspace directly from code. Set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region` as directed by the comments. Execute **Step 9**. You will be prompted to log in to your Azure Subscription.<br/>
-    <img src="images/eastus.jpg"/><br/><br/>
+2. All Azure Machine Learning entities are organized within a Workspace. You can create an AML Workspace in the Azure Portal, but as the code in **Step 9** shows, you can also create a Workspace directly from code. Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page** and set as below<br/>
+   <img src="images/cred.jpg"/><br/>
+   
  ``
  Set the value for `workspace_region` as 'eastus'
  ``
+    <img src="images/eastus.jpg"/><br/>
+3. Execute **Step 9**. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**<br/>
+   <img src="images/cred.jpg"/><br/>
+``
+If in case prompted did not appare, Check the Microsoft edge Browser in virtual machine
+``
     <img src="images/vs13.jpg"/><br/>
-3. To begin capturing metrics, you must first create an Experiment and then call `start_logging()` on that Experiment. The return value of this call is a Run. This root run can have other child runs. When you are finished with an experiment run, use `complete()` to close out the root run. Execute **Step 10** to train four different models using differing amounts of training data and log the results to Azure Machine Learning.<br/>
+4. To begin capturing metrics, you must first create an Experiment and then call `start_logging()` on that Experiment. The return value of this call is a Run. This root run can have other child runs. When you are finished with an experiment run, use `complete()` to close out the root run. Execute **Step 10** to train four different models using differing amounts of training data and log the results to Azure Machine Learning.<br/>
    <img src="images/vs14.jpg"/><br/>
-4. Now that you have captured history for various runs, you can review the runs. You could use the Azure Portal for this - go to the Azure Portal, find your Azure Machine Learning Workspace, select Experiments and select the UsedCars_Experiment. However, in this case we will use the AML SDK to query for the runs. Select and execute **Step 11** to view the runs and their status.<br/>
+5. Now that you have captured history for various runs, you can review the runs. You could use the Azure Portal for this - go to the Azure Portal, find your Azure Machine Learning Workspace, select Experiments and select the UsedCars_Experiment. However, in this case we will use the AML SDK to query for the runs. Select and execute **Step 11** to view the runs and their status.<br/>
     <img src="images/vs15.jpg"/><br/>
 
 ## Exercise 4 - Train remotely using AML Compute
