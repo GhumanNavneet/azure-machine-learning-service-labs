@@ -5,7 +5,7 @@ In this lab you will setup the Azure Machine Learning service from code and crea
 If you have not cloned this repository to your virtual machine, do so now. All of the artifacts for this lab are located under `C:\azure-machine-learning-service-labs-master\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`.
 
 ## Exercise 1 - Get oriented to the lab files
-1. On your virtual machine expand the folder `01-model-training` which is under `C:\azure-machine-learning-service-labs-master\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`
+1. On your virtual machine expand the folder `01-model-training` which is under `C:\labfiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`
 2. Expand the `data` folder. This folder contains two CSV files. `UsedCars_Clean.csv` represents the unlabeled data and `UsedCars_Affordability.csv` contains the complete data set with labels (Affordable is 1 for affordable, 0 for not affordable).<br/>
     <img src="images/data.jpg"/><br/>
 3. Expand `training`. This folder contains train.py which will be used later in the lab to train the model using a remote cluster provided by AML Compute.<br/>
