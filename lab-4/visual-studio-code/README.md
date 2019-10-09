@@ -1,4 +1,4 @@
-# Lab 4 - Model Training with AutoML
+# Model Training with AutoML
 
 In this lab you will us the automated machine learning (Auto ML) capabilities within the Azure Machine Learning service to automatically train multiple models with varying algorithms and hyperparameters, select the best performing model and register that model.
 
