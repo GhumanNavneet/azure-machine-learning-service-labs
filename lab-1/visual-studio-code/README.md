@@ -7,7 +7,7 @@ In this lab you will setup the Azure Machine Learning service from code and crea
     <img src="images/data.jpg"/><br/>
 3. Expand `training`. This folder contains train.py which will be used later in the lab to train the model using a remote cluster provided by AML Compute.<br/>
     <img src="images/train.jpg"/><br/>
-4. To run a lab, start Visual Studio Code from toolbar and click on open the folder: 
+4. To run a lab, start Visual Studio Code from taskbar and click on open the folder: 
     <img src="images/code.jpg"/><br/>
 5. Select `01-model-training` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`
     <img src="images/visual.jpg"/><br/>
