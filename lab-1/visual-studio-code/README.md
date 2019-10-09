@@ -2,19 +2,25 @@
 In this lab you will setup the Azure Machine Learning service from code and create a classical machine learning model that logs metrics collected during model training.
 
 ## Exercise 1 - Get oriented to the lab files
-1. On your virtual machine expand the folder `01-model-training` which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code`
+1. On your virtual machine expand the folder `01-model-training` which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\01-model-training`
 2. Expand the `data` folder. This folder contains two CSV files. `UsedCars_Clean.csv` represents the unlabeled data and `UsedCars_Affordability.csv` contains the complete data set with labels (Affordable is 1 for affordable, 0 for not affordable).<br/>
     <img src="images/data.jpg"/><br/>
 3. Expand `training`. This folder contains train.py which will be used later in the lab to train the model using a remote cluster provided by AML Compute.<br/>
     <img src="images/train.jpg"/><br/>
-4. To run a lab, start Visual Studio Code and open the folder: `01-model-training` and click the starting python file: `01_model_training.py`.<br/>
+4. To run a lab, start Visual Studio Code from toolbar and click on open the folder: 
+    <img src="images/code.jpg"/><br/>
+5. Select `01-model-training` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`
+    <img src="images/visual.jpg"/><br/>
+6. Select the `01_model_training.py` python file from **Explorer**
+    <img src="images/visual1.jpg"/><br/>
+7. For Interpreter command go to **View** and Select **Command Palette** (⇧⌘P).<br/>
     <img src="images/vs1.jpg"/><br/>
-5. For setting `azure_automl` as your interpreter select **Python Interpreter**. This will take 2 minutes to setup<br/>
+8. Click on **Python: Select Interpreter**. This will take 4-5 minutes<br/>
     <img src="images/vs2.jpg"/><br/>
-6. Once you select the python interpreter, select `azure_automl`
+9. Once you setup the python interpreter, select conda environmen `azure_automl`<br/>
     <img src="images/vs3.jpg"/><br/>
-7. `01_model_training.py` is the Python file you will step through executing in this lab.<br/>
-8. You need to `Run Cell` just above the step for each steps as show below.<br/>
+10. `01_model_training.py` is the Python file you will step through executing in this lab.<br/>
+11. Next, follow the steps as in outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.
     <img src="images/vs4.jpg"/><br/>
 
 ## Exercise 2 - Train a simple model locally
@@ -37,16 +43,16 @@ In this lab you will setup the Azure Machine Learning service from code and crea
 In the steps that follow, you will train multiple models using different sizes of training data and observe the impact on performance (accuracy). Each time you create new model, you are executing a Run in the terminology of Azure Machine Learning service. In this case, you will create one Experiment and execute multiple Runs within it, each with different training percentages (and resultant varying accuracies).
 
 1. Execute **Step 8** to quickly verify you have the Azure Machine Learning SDK installed. If you get a version number back without error, you are ready to proceed.<br/>
-2. All Azure Machine Learning entities are organized within a Workspace. You can create an AML Workspace in the Azure Portal, but as the code in **Step 9** shows, you can also create a Workspace directly from code. Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page** and set them as below<br/>
- * Set the workspace_region as `eastus`<br/>
+2. Copy the `subscription_id`and `resource_group` from your **Environment Detail Page**<br/>
    <img src="images/cred2.jpg"/><br/>
+3. All Azure Machine Learning entities are organized within a Workspace. You can create an AML Workspace in the Azure Portal, but as the code in Step 9 shows, you can also create a Workspace directly from code. Set the values for '`subscription_id`, `resource_group`, `workspace_nam` and `workspace_region` as directed by the comments. Set the `workspace_region` as **eastus**.<br/>
    <img src="images/eastus.jpg"/><br/>
-3. Execute **Step 9**. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**<br/>
-   <img src="images/cred.jpg"/><br/>
-``
-If in case prompted did not appare, Check the Microsoft edge Browser in virtual machine
-``
-    <img src="images/vs13.jpg"/><br/>
+3. Execute **Step 9**. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
+   <img src="images/pass.jpg"/><br/>
+ * Copy the **Password** from **Environment Detali Page** and Paste in Sign in page
+   <img src="images/sign.jpg"/><br/>   
+5. Check the Output in **Python Interactive**
+   <img src="images/vs13.jpg"/><br/>
 4. To begin capturing metrics, you must first create an Experiment and then call `start_logging()` on that Experiment. The return value of this call is a Run. This root run can have other child runs. When you are finished with an experiment run, use `complete()` to close out the root run. Execute **Step 10** to train four different models using differing amounts of training data and log the results to Azure Machine Learning.<br/>
    <img src="images/vs14.jpg"/><br/>
 5. Now that you have captured history for various runs, you can review the runs. You could use the Azure Portal for this - go to the Azure Portal, find your Azure Machine Learning Workspace, select Experiments and select the UsedCars_Experiment. However, in this case we will use the AML SDK to query for the runs. Select and execute **Step 11** to view the runs and their status.<br/>
