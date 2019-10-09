@@ -48,9 +48,9 @@ In the steps that follow, you will train multiple models using different sizes o
 3. All Azure Machine Learning entities are organized within a Workspace. You can create an AML Workspace in the Azure Portal, but as the code in Step 9 shows, you can also create a Workspace directly from code. Set the values for '`subscription_id`, `resource_group`, `workspace_nam` and `workspace_region` as directed by the comments. Set the `workspace_region` as **eastus**.<br/>
    <img src="images/eastus.jpg"/><br/>
 3. Execute **Step 9**. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
-   <img src="images/pass.jpg"/><br/>
+   <img src="images/sign.jpg"/><br/>
  * Copy the **Password** from **Environment Detali Page** and Paste in Sign in page
-   <img src="images/sign.jpg"/><br/>   
+   <img src="images/pass.jpg"/><br/>   
 5. Check the Output in **Python Interactive**
    <img src="images/vs13.jpg"/><br/>
 4. To begin capturing metrics, you must first create an Experiment and then call `start_logging()` on that Experiment. The return value of this call is a Run. This root run can have other child runs. When you are finished with an experiment run, use `complete()` to close out the root run. Execute **Step 10** to train four different models using differing amounts of training data and log the results to Azure Machine Learning.<br/>
