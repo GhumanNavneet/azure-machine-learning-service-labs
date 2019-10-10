@@ -8,16 +8,16 @@ In this lab you will use the capabilities of the Azure Machine Learning service 
     <img src="images/data1.jpg"/><br/>
 3. Expand `training`. This folder contains train.py which will be used later in the lab to train the model using a remote cluster provided by AML Compute.<br/>
     <img src="images/train.jpg"/><br/>
-4. To run a lab, start Visual Studio Code from taskbar and click on open the folder:<br/>
+4. To run a lab, start Visual Studio Code from taskbar and click on **Open Folder**:<br/>
     <img src="images/code.jpg"/><br/>
 5. Select `02-model-management` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`<br/>
-    <img src="images/model2.jpg"/><br/>   
-6. Select the `04-automl.py` python file from **Explorer**
+    <img src="images/model02.jpg"/><br/>   
+6. Select the `02-model-management.py` python file from **Explorer**
 7. Click on **Python: Select Interpreter**. This will take 4-5 minutes<br/>
     <img src="images/lab2.jpg"/><br/>
 8.  Once you setup the python interpreter, select conda environmen `azure_automl`<br/>
     <img src="images/python.jpg"/><br/>
-9. `04_automl.py` is the Python file you will step thru executing in this lab.<br/>
+9. `02-model-management.py` is the Python file you will step thru executing in this lab.<br/>
 10.  Next, follow the steps as in outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.<br/>
     <img src="images/lab02.jpg"/><br/>
 
@@ -27,8 +27,16 @@ This lab builds upon the lessons learned in the previous lab, but is self contai
     <img src="images/lab4.jpg"/><br/>
 2. In **Step 2**, we will define a helper method that locally trains, evaluates and then registers the trained model with Azure Machine Learning. **Execute** Step #2.<br/>
     <img src="images/lab42.jpg"/><br/>
-3. In **Step 3**, we retrieve an existing Azure Machine Learning Workspace (or create a new one if desired). In this step, be sure to set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region` as directed by the comments. With the Workspace retrieved, we will train 3 different models using different subsets of the training data. **Execute** Step #3.<br/>
-    <img src="images/eastus.jpg"/><br/>  
+3. In this step, Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page**<br/>
+   <img src="images/cred2.jpg"/><br/>
+4. Set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region`.<br/>
+ *  Set the `workspace_region` as eastus<br/>
+   <img src="images/eastus.jpg"/><br/>
+6. With the Workspace retrieved, we will train 3 different models using different subsets of the training data. **Execute** Step #3. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
+   <img src="images/sign.jpg"/><br/>
+ * Copy the **Password** from **Environment Detali Page** and Paste in Sign in page<br/>
+   <img src="images/pass.jpg"/><br/>
+7. Check the Output in **Python Interactive**<br/>
    <img src="images/lab43.jpg"/><br/>
 
 ## Exercise 3 - Use Azure Machine Learning to query for performance metrics
