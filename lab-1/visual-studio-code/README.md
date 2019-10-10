@@ -20,7 +20,7 @@ In this lab you will setup the Azure Machine Learning service from code and crea
 9. Once you setup the python interpreter, select conda environmen `azure_automl`<br/>
     <img src="images/vs3.jpg"/><br/>
 10. `01_model_training.py` is the Python file you will step through executing in this lab.<br/>
-11. Next, follow the steps as in outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.
+11. Next, follow the steps as outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.
     <img src="images/vs4.jpg"/><br/>
 
 ## Exercise 2 - Train a simple model locally
