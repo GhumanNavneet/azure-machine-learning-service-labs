@@ -9,6 +9,7 @@ In this lab you will us the automated machine learning (Auto ML) capabilities wi
 3. To run a lab, start Visual Studio Code from taskbar and click on open the folder:<br/>
     <img src="images/code.jpg"/><br/>
 4. Select `04-automl` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`<br/>
+    <img src="images/auto.jpg"/><br/>
 5. Select the `04-automl.py` python file from **Explorer**
 6. For Interpreter command go to **View** and Select **Command Palette** (⇧⌘P).<br/>
     <img src="images/lab26.jpg"/><br/>
