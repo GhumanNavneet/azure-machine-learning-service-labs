@@ -9,7 +9,6 @@ In this lab you will us the automated machine learning (Auto ML) capabilities wi
 3. To run a lab, start Visual Studio Code from taskbar and click on open the folder:<br/>
     <img src="images/code.jpg"/><br/>
 4. Select `04-automl` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`<br/>
-    <img src="images/visual.jpg"/><br/>
 5. Select the `04-automl.py` python file from **Explorer**
 6. For Interpreter command go to **View** and Select **Command Palette** (⇧⌘P).<br/>
     <img src="images/lab26.jpg"/><br/>
@@ -34,17 +33,11 @@ This lab builds upon the lessons learned in the previous lab, but is self contai
    <img src="images/pass.jpg"/><br/>
 4. Check the Output in **Python Interactive**<br/>
    <img src="images/lab21.jpg"/><br/>
-5. Execute **Step 1**. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**<br/>
-   <img src="images/cred.jpg"/><br/>
-``
-If in case prompted did not appare, Check the Microsoft edge Browser in virtual machine
-``
-   <img src="images/lab21.jpg"/><br/>
-6. To train a model using **AutoML** you need only provide a configuration for AutoML that defines items such as the type of model (classification or regression), the performance metric to optimize, exit criteria in terms of max training time and iterations and desired performance, any algorithms that should not be used, and the path into which to output the results. This configuration is specified using the `AutomMLConfig` class, which is then used to drive the submission of an experiment via `experiment.submit`.  When AutoML finishes the parent run, you can easily get the best performing run and model from the returned run object by using `run.get_output()`. **Execute** Step 2 to define the helper function that wraps the AutoML job submission.<br/>
+5. To train a model using **AutoML** you need only provide a configuration for AutoML that defines items such as the type of model (classification or regression), the performance metric to optimize, exit criteria in terms of max training time and iterations and desired performance, any algorithms that should not be used, and the path into which to output the results. This configuration is specified using the `AutomMLConfig` class, which is then used to drive the submission of an experiment via `experiment.submit`.  When AutoML finishes the parent run, you can easily get the best performing run and model from the returned run object by using `run.get_output()`. **Execute** Step 2 to define the helper function that wraps the AutoML job submission.<br/>
    <img src="images/lab22.jpg"/><br/>
-7. In **Step 3**, you invoke the AutoML job. **Execute** Step 3.<br/>
+6. In **Step 3**, you invoke the AutoML job. **Execute** Step 3.<br/>
    <img src="images/lab23.jpg"/><br/>
-8. Try out the best model by using Step 4.<br/>
+7. Try out the best model by using Step 4.<br/>
    <img src="images/lab24.jpg"/><br/>
 
 ## Exercise 3 - Register an AutoML created model
