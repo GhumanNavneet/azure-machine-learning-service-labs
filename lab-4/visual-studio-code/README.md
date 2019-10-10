@@ -23,7 +23,7 @@ In this lab you will us the automated machine learning (Auto ML) capabilities wi
 
 ## Exercise 2 - Train a model using AutoML
 This lab builds upon the lessons learned in the previous lab, but is self contained so you work thru this lab without having to run a previous lab. 
-1. Begin with **Step 1**. In this step you are loading the data prepared in previous labs and acquiring (or creating) an instance of your Azure Machine Learning Workspace. In this step, Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page** and set them as below<br/>
+1. Begin with **Step 1**. In this step you are loading the data prepared in previous labs and acquiring (or creating) an instance of your Azure Machine Learning Workspace. In this step, Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page**<br/>
    <img src="images/cred2.jpg"/><br/>
 2. Set the values for subscription_id, resource_group, workspace_name and workspace_region.<br/>
  *  Set the `workspace_region` as eastus<br/>
