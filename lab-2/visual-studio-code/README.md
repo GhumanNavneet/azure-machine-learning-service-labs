@@ -13,12 +13,14 @@ In this lab you will use the capabilities of the Azure Machine Learning service 
 5. Select `02-model-management` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`<br/>
     <img src="images/model02.jpg"/><br/>   
 6. Select the `02-model-management.py` python file from **Explorer**
-7. Click on **Python: Select Interpreter**. This will take 4-5 minutes<br/>
+7. For Interpreter command go to **View** and Select **Command Palette** (⇧⌘P).<br/>
     <img src="images/lab2.jpg"/><br/>
-8.  Once you setup the python interpreter, select conda environmen `azure_automl`<br/>
+8. Click on **Python: Select Interpreter**. This will take 4-5 minutes<br/>
+    <img src="images/select.jpg"/><br/>
+9.  Once you setup the python interpreter, select conda environmen `azure_automl`<br/>
     <img src="images/python.jpg"/><br/>
-9. `02-model-management.py` is the Python file you will step thru executing in this lab.<br/>
-10.  Next, follow the steps as in outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.<br/>
+10. `02-model-management.py` is the Python file you will step thru executing in this lab.<br/>
+11.  Next, follow the steps as in outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.<br/>
     <img src="images/lab02.jpg"/><br/>
 
 ## Exercise 2 - Train a simple model locally
