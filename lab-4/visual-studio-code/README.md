@@ -18,7 +18,7 @@ In this lab you will us the automated machine learning (Auto ML) capabilities wi
 8.  Once you setup the python interpreter, select conda environmen `azure_automl`<br/>
     <img src="images/python.jpg"/><br/>
 9. `04_automl.py` is the Python file you will step thru executing in this lab.<br/>
-10.  Next, follow the steps as in outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.<br/>
+10.  Next, follow the steps as outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.<br/>
    <img src="images/lab04.jpg"/><br/>
 
 ## Exercise 2 - Train a model using AutoML
