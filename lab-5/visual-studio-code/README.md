@@ -6,7 +6,7 @@ In this lab you train deep learning models built with Keras and a Tensorflow bac
 
 1. In your virtual machine click on Start Menu and select Anancoda command prompt under Anancoda folder.<br/>
 <img src="images/ana.jpg"/><br/>
-2. Use following command to activate `azureml_auto` conda environment.<br/>
+2. Use following command to activate `azure_automl` conda environment.<br/>
 ``
 activate azure_automl
 ``<br/>
@@ -23,7 +23,7 @@ conda install -c conda-forge keras
 1. In your virtual machine expand the folder `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\05-deep-learning`.<br/>
 2. To run a lab, start Visual Studio Code from taskbar and click on **Open folder**:<br/>
     <img src="images/code.jpg"/><br/>
-3. Select `04-automl` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`<br/>
+3. Select `05-deep-learning` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`<br/>
     <img src="images/ana3.jpg"/><br/>
 4. Select the `05-deep-learning.py` python file from **Explorer**
 5. For Interpreter command go to **View** and Select **Command Palette** (⇧⌘P).<br/>
