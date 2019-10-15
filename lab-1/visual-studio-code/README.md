@@ -2,12 +2,12 @@
 In this lab you will setup the Azure Machine Learning service from code and create a classical machine learning model that logs metrics collected during model training.
 
 ## Exercise 1 - Get oriented to the lab files
-1. On your virtual machine expand the folder `01-model-training` which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\01-model-training`
+1. In your virtual machine expand the folder `01-model-training` which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\01-model-training`
 2. Expand the `data` folder. This folder contains two CSV files. `UsedCars_Clean.csv` represents the unlabeled data and `UsedCars_Affordability.csv` contains the complete data set with labels (Affordable is 1 for affordable, 0 for not affordable).<br/>
     <img src="images/data.jpg"/><br/>
 3. Expand `training`. This folder contains train.py which will be used later in the lab to train the model using a remote cluster provided by AML Compute.<br/>
     <img src="images/train.jpg"/><br/>
-4. To run a lab, start Visual Studio Code from taskbar and click on **Open folder**: 
+4. To run a lab, start Visual Studio Code from taskbar and click on **Open folder**:<br/>
     <img src="images/code.jpg"/><br/>
 5. Select `01-model-training` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`
     <img src="images/visual.jpg"/><br/>
