@@ -4,20 +4,21 @@ In this lab you train deep learning models built with Keras and a Tensorflow bac
 
 ## Exercise 0 - Set the Environment
 
-1. In your virtual machine click on Start Menu and select Anancoda command prompt under Anancoda folder.<br/>
+1. In your virtual machine click on **Start Menu** and select Anancoda command prompt under **Anancoda3** folder.<br/>
 <img src="images/ana.jpg"/><br/>
 2. Use following command to activate `azure_automl` conda environment.<br/>
 ``
 activate azure_automl
 ``<br/>
 <img src="images/ana1.jpg"/><br/>
-3. Install keras gpu for running through the lab<br/>
+3. Install **keras gpu** for running through the lab. This will take 2-3 mintues<br/>
 ``
 conda install -c conda-forge keras
 ``<br/>
 <img src="images/ana2.jpg"/><br/>
 4. Press `y` for proceeding<br/>
 <img src="images/yes.jpg"/><br/>
+5. Close the command prompt.
 
 ## Exercise 1 - Get oriented to the lab files
 1. In your virtual machine expand the folder `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\05-deep-learning`.<br/>
@@ -37,11 +38,11 @@ conda install -c conda-forge keras
    <img src="images/lab5.jpg"/><br/>
 
 ## Exercise 2 - Train an autoencoder using GPU
-1. Start with Step 1. Here you will use Keras to define an autoencoder. Don't get hung up on the details of constructing the auto-encoder. The point of this lab is to show you how to train neural networks using GPU's. Execute Step 1. In the output, verify that `K.tensorflow_backend._get_available_gpus()` returned an entry describing a GPU available in your environment.<br/>
+1. Start with **Step 1**. Here you will use Keras to define an autoencoder. Don't get hung up on the details of constructing the auto-encoder. The point of this lab is to show you how to train neural networks using GPU's. Execute Step 1. In the output, verify that `K.tensorflow_backend._get_available_gpus()` returned an entry describing a GPU available in your environment.<br/>
 <img src="images/ana5.jpg"/><br/>
 2. Once you have your autoencoder model structured, you need to train the the underlying neural network. Training this model on regular CPU's will take hours. However, you can execute this same code in an environment with GPU's for better performance. Execute Step 2. How long did your training take?<br/>
 <img src="images/ana6.jpg"/><br/>
-3. With a trained auto-encoder in hand, try using the model by selecting and executing Step 3.
+3. With a trained auto-encoder in hand, try using the model by selecting and executing **Step 3**.
 <img src="images/ana7.jpg"/><br/>
 
 ## Exercise 3 - Register the neural network model with Azure Machine Learning
