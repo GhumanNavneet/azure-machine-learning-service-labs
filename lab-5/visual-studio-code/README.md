@@ -18,7 +18,7 @@ conda install -c conda-forge keras
 <img src="images/ana2.jpg"/><br/>
 4. Press `y` for proceeding<br/>
 <img src="images/yes.jpg"/><br/>
-5. Close the command prompt.
+5. Once the installation completed close the command prompt.
 
 ## Exercise 1 - Get oriented to the lab files
 1. In your virtual machine expand the folder `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\05-deep-learning`.<br/>
