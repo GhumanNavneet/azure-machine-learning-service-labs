@@ -3,7 +3,7 @@
 In this lab you will us the automated machine learning (Auto ML) capabilities within the Azure Machine Learning service to automatically train multiple models with varying algorithms and hyperparameters, select the best performing model and register that model.
 
 ## Exercise 1 - Get oriented to the lab files
-1. On your local computer expand the folder `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\04-automl`.<br/>
+1. In your virtual machine expand the folder `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\04-automl`.<br/>
 2. Expand the `data` folder. This folder contains the CSV file `UsedCars_Affordability.csv` which contains the complete data set with labels (Affordable is 1 for affordable, 0 for not affordable).<br/>
    <img src="images/data1.jpg"/><br/>
 3. To run a lab, start Visual Studio Code from taskbar and click on **Open folder**:<br/>
