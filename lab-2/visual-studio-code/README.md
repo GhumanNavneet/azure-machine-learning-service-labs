@@ -48,5 +48,7 @@ This lab builds upon the lessons learned in the previous lab, but is self contai
 1. Remote model training was covered in the previous lab. **Execute** Step #5 to create or retreive your **AML Compute** cluster and the submit to it a model training job. Wait for the run to complete before proceeding to the next exercise.<br/>
    <img src="images/lab45.jpg"/><br/>
 ## Exercise 5 - Retrieve metrics for the remote Run
-1. You can easily retrieve the metrics for a Run executed remotely by using `run` object returned by the call to **Experiment.submit**. **Execute** Step 6 to retrieve metrics for the run you just executed. What was the accuracy of the run?<br/>
-   <img src="images/lab46.jpg"/><br/>
+1.Execute the cell to **Create Estimator**
+ <img src="images/lab46.jpg"/><br/>
+2. You can easily retrieve the metrics for a Run executed remotely by using `run` object returned by the call to **Experiment.submit**. **Execute** Step 6 to retrieve metrics for the run you just executed. What was the accuracy of the run?<br/>
+   <img src="images/model.jpg"/><br/>
