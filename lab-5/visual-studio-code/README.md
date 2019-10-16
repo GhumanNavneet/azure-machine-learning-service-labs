@@ -25,7 +25,7 @@ In this lab you train deep learning models built with Keras and a Tensorflow bac
 2. Once you have your autoencoder model structured, you need to train the the underlying neural network. Training this model on regular CPU's will take hours. However, you can execute this same code in an environment with GPU's for better performance. Execute Step 2. How long did your training take?<br/>
 <img src="images/ana6.jpg"/><br/>
 3. With a trained auto-encoder in hand, try using the model by selecting and executing **Step 3**.
-<img src="images/ana7.jpg"/><br/>
+<img src="images/ana8.jpg"/><br/>
 
 ## Exercise 3 - Register the neural network model with Azure Machine Learning
 1. In this step, Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page**<br/>
@@ -33,7 +33,7 @@ In this lab you train deep learning models built with Keras and a Tensorflow bac
 2. Set the values for subscription_id, resource_group, workspace_name and workspace_region.<br/>
 *  Set the `workspace_region` as eastus<br/>
 <img src="images/eastus.jpg"/><br/>
-3. Execute Step 4 to register the model.You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
+3. Execute **Step 4** to register the model.You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
 <img src="images/sign.jpg"/><br/>
 * Copy the **Password** from **Environment Detali Page** and Paste in Sign in page<br/>
 <img src="images/pass.jpg"/><br/>
