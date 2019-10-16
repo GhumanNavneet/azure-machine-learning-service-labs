@@ -14,7 +14,7 @@ In this lab you train deep learning models built with Keras and a Tensorflow bac
 6. Click on **Python: Select Interpreter**. This will take 4-5 minutes<br/>
     <img src="images/select.jpg"/><br/>
 7.  Once you setup the python interpreter, select conda environmen `azure_automl`<br/>
-    <img src="images/python.jpg"/><br/>
+    <img src="images/ana0.jpg"/><br/>
 8. `05-deep-learning.py` is the Python file you will step thru executing in this lab.<br/>
 9. Next, follow the steps as outlined below **Exercises**. For executing each cell in below execises click on **Run Cell** i.e, just above the step for each steps as show below.<br/>
    <img src="images/lab5.jpg"/><br/>
