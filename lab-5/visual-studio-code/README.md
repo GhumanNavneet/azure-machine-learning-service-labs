@@ -2,24 +2,6 @@
 
 In this lab you train deep learning models built with Keras and a Tensorflow backend that utilize GPUs with the Azure Machine Learning service.
 
-## Exercise 0 - Set the Environment
-
-1. In your virtual machine click on **Start Menu** and select Anancoda command prompt under **Anancoda3** folder.<br/>
-<img src="images/ana.jpg"/><br/>
-2. Use following command to activate `azure_automl` conda environment.<br/>
-``
-activate azure_automl
-``<br/>
-<img src="images/ana1.jpg"/><br/>
-3. Install **keras gpu** for running through the lab. This will take 2-3 mintues<br/>
-``
-conda install -c conda-forge keras
-``<br/>
-<img src="images/ana2.jpg"/><br/>
-4. Press `y` for proceeding<br/>
-<img src="images/yes.jpg"/><br/>
-5. Once the installation completed close the command prompt.
-
 ## Exercise 1 - Get oriented to the lab files
 1. In your virtual machine expand the folder `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\05-deep-learning`.<br/>
 2. To run a lab, start Visual Studio Code from taskbar and click on **Open folder**:<br/>
@@ -49,10 +31,11 @@ conda install -c conda-forge keras
 1. In this step, Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page**<br/>
 <img src="images/cred2.jpg"/><br/>
 2. Set the values for subscription_id, resource_group, workspace_name and workspace_region.<br/>
- *  Set the `workspace_region` as eastus<br/>
-   <img src="images/eastus.jpg"/><br/>
+*  Set the `workspace_region` as eastus<br/>
+<img src="images/eastus.jpg"/><br/>
 3. Execute Step 4 to register the model.You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
 <img src="images/sign.jpg"/><br/>
- * Copy the **Password** from **Environment Detali Page** and Paste in Sign in page<br/>
-   <img src="images/pass.jpg"/><br/>
-4. Observe that you can register a neural network model with Azure Machine Learning in exactly the same way you would register a classical machine learning model.><br/>
+* Copy the **Password** from **Environment Detali Page** and Paste in Sign in page<br/>
+<img src="images/pass.jpg"/><br/>
+4. Observe that you can register a neural network model with Azure Machine Learning in exactly the same way you would register a classical machine learning model.<br/>
+<img src="images/ana7.jpg"/><br/>
