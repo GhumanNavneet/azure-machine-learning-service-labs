@@ -29,10 +29,10 @@ This lab builds upon the lessons learned in the previous lab, but is self contai
     <img src="images/lab4.jpg"/><br/>
 2. In **Step 2**, we will define a helper method that locally trains, evaluates and then registers the trained model with Azure Machine Learning. **Execute** Step #2.<br/>
     <img src="images/lab42.jpg"/><br/>
-3. In this step, Get the values for `subscription_id`, `resource_group` from your **Environment Detail Page**<br/>
+3. In this step, Get the values for `subscription_id`, `resource_group` and `worspace_region` from your **Environment Detail Page**<br/>
    <img src="images/cred2.jpg"/><br/>
 4. Set the values for `subscription_id`, `resource_group`, `workspace_name` and `workspace_region`.<br/>
- *  Set the `workspace_region` as eastus<br/>
+ *  Set the `workspace_region` as the per your resource group region<br/>
    <img src="images/eastus.jpg"/><br/>
 6. With the Workspace retrieved, we will train 3 different models using different subsets of the training data. **Execute** Step #3. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
    <img src="images/sign.jpg"/><br/>
