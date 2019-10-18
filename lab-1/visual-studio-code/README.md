@@ -52,7 +52,7 @@ In the steps that follow, you will train multiple models using different sizes o
 <img src="images/eastus.jpg"/><br/>
 4. Execute **Step 9**. You will be prompted to log in to your Azure. Use the **Azure credentials** that are given in your **Environment Detali Page**. If you didn't get **Login** prompt go to **Internet Explorer**<br/>
 <img src="images/sign.jpg"/><br/>
-5 Copy the **Password** from **Environment Detali Page** and Paste in Sign in page<br/>
+5. Copy the **Password** from **Environment Detali Page** and Paste in Sign in page<br/>
 <img src="images/pass.jpg"/><br/>   
 6. Check the Output in **Python Interactive**<br/>
 <img src="images/vs13.jpg"/><br/>
