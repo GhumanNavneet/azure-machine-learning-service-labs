@@ -7,10 +7,11 @@ In this lab you will us the automated machine learning (Auto ML) capabilities wi
 2. Expand the `data` folder. This folder contains the CSV file `UsedCars_Affordability.csv` which contains the complete data set with labels (Affordable is 1 for affordable, 0 for not affordable).<br/>
    <img src="images/data1.jpg"/><br/>
 3. To run a lab, start Visual Studio Code from taskbar and click on **Open folder**:<br/>
-    <img src="images/code.jpg"/><br/>
-```
+    <img src="images/code.jpg"/><br/><br/>
+``
 Please install if you are prompted to install Python. Ignore other extensions because we don't require for this lab.
-```
+``
+
 4. Select `04-automl` folder which is under `C:\LabFiles\azure-machine-learning-service-labs-master\starter-artifacts\visual-studio-code\`<br/>
     <img src="images/auto.jpg"/><br/>
 5. Select the `04-automl.py` python file from **Explorer**
@@ -25,7 +26,7 @@ Please install if you are prompted to install Python. Ignore other extensions be
    <img src="images/lab04.jpg"/><br/>
 
 ## Exercise 2 - Train a model using AutoML
-This lab builds upon the lessons learned in the previous lab, but is self contained so you work thru this lab without having to run a previous lab.<br/>
+This lab builds upon the lessons learned in the previous lab, but is self contained so you work thru this lab without having to run a previous lab.<br/><br/>
 1. Begin with **Step 1**. In this step you are loading the data prepared in previous labs and acquiring (or creating) an instance of your Azure Machine Learning Workspace. In this step, Get the values for `subscription_id`, `resource_group` and `workspace_region`from your **Environment Detail Page**<br/>
    <img src="images/cred2.jpg"/><br/>
 2. Set the values for subscription_id, resource_group, workspace_name and workspace_region.<br/>
