@@ -24,7 +24,7 @@ In this lab you train deep learning models built with Keras and a Tensorflow bac
 <img src="images/ana5.jpg"/><br/>
 2. Once you have your autoencoder model structured, you need to train the the underlying neural network. Training this model on regular CPU's will take hours. However, you can execute this same code in an environment with GPU's for better performance. Execute Step 2. How long did your training take?<br/>
 <img src="images/ana6.jpg"/><br/>
-3. With a trained auto-encoder in hand, try using the model by selecting and executing **Step 3**.
+3. With a trained auto-encoder in hand, try using the model by selecting and executing **Step 3**.<br/>
 <img src="images/ana8.jpg"/><br/>
 
 ## Exercise 3 - Register the neural network model with Azure Machine Learning
